@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	pb "github.com/EwanValentine/shippy-user-service/proto/user"
 	micro "github.com/micro/go-micro"
+	pb "github.com/uhdang/mig-user-service/proto/auth"
 )
 
 const topic = "user.created"

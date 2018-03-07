@@ -1,9 +1,9 @@
 build:
-	docker build -t email-service .
+	docker build -t mig-email-service .
 
 run:
-	docker run --net="host" \
+	docker run --name mig-email-service --net mig \
 		-p 50054 \
 		-e MICRO_SERVER_ADDRESS=:50054 \
 		-e MICRO_REGISTRY=mdns \
-		email-service
+		mig-email-service
